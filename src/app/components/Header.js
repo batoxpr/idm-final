@@ -19,7 +19,6 @@ const Header = ({isLoggedIn, logoutUser}) => {
                 )}
                 {!isLoggedIn && (
                     <>
-                    <image src="./logo.png"></image>
                     <Link href="/login">Login</Link>
                     <Link href="/join">Join Budify</Link>
                     </>

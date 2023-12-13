@@ -6,7 +6,7 @@ const CreateUserForm = ({createUser}) => {
         <div>
             <form className={styles.Form} onSubmit={(e) => createUser(e)}>
 
-                <label htmlFor="name">Username</label>
+                <label htmlFor="name">Name</label>
                 <input type="text" id="name" name="name" />
 
                 <label htmlFor="email">Email</label>

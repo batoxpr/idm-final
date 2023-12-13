@@ -12,15 +12,14 @@ const CreatePostForm = ({createPostFunction}) => {
 
                 <label htmlFor="postContent">Post Content</label>
                 <input type="text" id="postContent" name="postContent" />
-
                 <label htmlFor="image">Image</label>
                 <input
                 type="file"
                 id="image"
                 name="image"
                 placeholder="Choose Image"
-                accept="image/png, image/jpeg, image/heic, image/gif"
-                onChange={(e) => {
+                accept="image/png,image/jpeg,"
+                onChange={(e)=>{
                     setImageUpload(e.target.files[0]);
                 }}
             />

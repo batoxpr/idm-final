@@ -6,7 +6,7 @@ const LoginForm = ({loginUser}) => {
         <div>
             <form className={styles.Form} onSubmit={(e) => loginUser(e)}>
                 <label htmlFor="email">Email</label>
-                <input autocomplete="new-password" type="email" name="email" />
+                <input type="email" name="email" />
 
                 <label htmlFor="password">Password</label>
                 <input type="password" name="password" />

@@ -1,5 +1,4 @@
 import styles from './components.module.css';
-import '../globals.css';
 
 const PostCard = ({ post }) => {
     return (
@@ -9,5 +8,4 @@ const PostCard = ({ post }) => {
          </div>
     );
 };
-
 export default PostCard;

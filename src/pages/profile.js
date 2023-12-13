@@ -4,7 +4,7 @@ import { query, collection, getFirestore, where, getDocs, } from "firebase/fires
 import UserProfileCard from "@/app/components/UserProfileCard";
 
 
-export default function UserProfile({isLoggedIn, loginInformation}) {
+export default function UserProfile({isLoggedIn, userInformation}) {
   const router = useRouter();
   const [user, setUser] = useState({});
 
@@ -20,7 +20,7 @@ export default function UserProfile({isLoggedIn, loginInformation}) {
         const db = getFirestore();
         const q = query(
             collection(db, "users"),
-            where("userId", "==", loginInformation?.uid)
+            where("userId", "==", userInformation?.uid)
         );
         const querySnapshot = await getDocs(q);
         querySnapshot.forEach((doc) => {
@@ -30,12 +30,12 @@ export default function UserProfile({isLoggedIn, loginInformation}) {
         setUser(user);
     }
     getUser();
-  }, [loginInformation]);
+  }, [userInformation]);
 
   return (
         <main>
           <h2>Profile Information</h2>
-          <UserProfileCard user={user} loginInformation={loginInformation} />
+          <UserProfileCard user={user} userInformation={userInformation} />
         </main>
   );
 }

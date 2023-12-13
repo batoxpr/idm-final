@@ -10,7 +10,7 @@ export default function Dashboard({isLoggedIn}) {
 
   useEffect(() => { 
    // if user is not logged in, send them to login page
-  if (!isLoggedIn) router.push("/login");
+    if (!isLoggedIn) router.push("/login");
   }, [isLoggedIn]);
 
   // Get all posts to display
@@ -21,19 +21,19 @@ export default function Dashboard({isLoggedIn}) {
       const postsQuery = await getDocs(collection(db, "posts"));
 
       postsQuery.forEach((post) => {
-        postsArray.push({ id: post.id, ...post.data() });
+        postsArray.push({id: post.id, ...post.data() });
       });
       setAllPosts(postsArray);
     }
     getAllPosts();
   }, []);
 
-  return (
+  return(
         <main>
           <h2>Your Music Log</h2>
-          {allPosts.map((post, i) => {
+          {allPosts.map((post, i) => (
             <PostCard post={post} key={i} />
-          })}
+          ))}
         </main>
   );
 }

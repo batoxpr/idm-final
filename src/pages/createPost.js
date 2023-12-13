@@ -2,10 +2,9 @@ import { useCallback, useEffect } from "react";
 import { useRouter } from "next/router";
 import CreatePostForm from "@/app/components/CreatePostForm";
 import { getFirestore, collection, addDoc } from "firebase/firestore"
-import { getDownloadURL, getStorage, ref, uploadBytes} from "firebase/storage"
-import '../app/globals.css';
+import { getDownloadURL, getStorage, ref, uploadBytes} from "firebase/storage";
 
-export default function CreateUser({isLoggedIn, userInformation}) {
+export default function CreatePost({isLoggedIn, userInformation}) {
     const router = useRouter ();
     useEffect(() => {
       // If user is logged in forward them to the profile page
@@ -15,24 +14,26 @@ export default function CreateUser({isLoggedIn, userInformation}) {
     const createPostFunction = useCallback(
         async (e, imageUpload) => {
         e.preventDefault();
+        // Get Post content from Form
+        const postContent = e.currentTarget.postContent.value;
         // Initiate Firebase
         const storage = getStorage();
         const db = getFirestore();
-        // Get Post content from Form
-        const postContent = e.currentTarget.postContent.value;
         // Variable for image
         let imageURL;
-          const storageRef = ref(storage, imageUpload?.name);
+        const storageRef = ref(storage, imageUpload?.name);
+        if(imageUpload){
           await uploadBytes(storageRef, imageUpload)
             .then(async (snapshot) => {
-              await getDownloadURL(snapshot.ref)
-                .then((url) => {
+              await getDownloadURL(snapshot.ref).then((url) => {
                   imageURL = url;
                 });
             })
             .catch((error) => {
               console.warn(error);
-            })
+            });
+          }
+
         // Get User information to link post to user
         const userId = userInformation.uid;
         // Send post to firebase with addDoc
