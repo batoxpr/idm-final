@@ -1,0 +1,78 @@
+/* Header Styles */
+.Header {
+    display: flex;
+    justify-content: space-between; /* Position the logo in the center and nav buttons on the left */
+    align-items: center; /* Align items vertically in the center */
+    padding: 0px 25px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    color: #958EF0;
+}
+
+.HeaderNav {
+    display: flex;
+    align-items: center; /* Align the navigation links vertically in the center */
+}
+
+.HeaderNav a {
+    color: #958EF0;
+    margin: 0 15px;
+    padding: 10px 5px;
+    font-size: 18px;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.HeaderNav a:hover {
+    color: #333333;
+}
+
+.logo {
+    display: flex;
+    height: 35px;
+    width:auto;
+}
+
+/* Form Styles */
+.Form {
+    padding: 50px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    height: 100px;
+    gap: 5px;
+    color: #333333;
+    margin: 40px auto; /* Center the form horizontally */
+}
+
+.Button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border-color: #958EF0;
+    background-color: #958EF0;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer; /* Add a pointer cursor for better usability */
+}
+
+.Button:hover {
+    background-color: #ffffff; /* Darker color on hover */
+    color: #333333;
+}
+
+/* UserProfile Styles */
+.UserProfile {
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
