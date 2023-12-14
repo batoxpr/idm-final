@@ -5,9 +5,9 @@ Dynamic Web Application class with Professor James Ayres
 Bato Batbileg
 
 ## Concept
-Budify is a website that explores the social aspect of music listening experience.
+Budify is a website that explores the social aspect of the music listening experience.
 
-1) Timeline of Music taste: Budify allows users to create a timeline of their musical journey over the years. Each post on Budify includes a music link, a screenshot of their listening activity, and an accompanying image capturing the essence of that moment. With each new post, the user gets to create a visual and auditory diary of their life through music.
+1) Timeline of Music Taste: Budify allows users to create a timeline of their musical journey over the years. Each post on Budify includes a music link, a screenshot of their listening activity, and an accompanying image capturing the essence of that moment. With each new post, the user gets to create a visual and auditory diary of their life through music.
 
 2) Memories: Music can be a powerful trigger for memories. Budify helps users document their life's moments through the songs that they listen to at the time. As users scroll through their Budify profile, they get to reignite memories from the past.
 
