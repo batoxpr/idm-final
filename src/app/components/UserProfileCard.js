@@ -7,8 +7,7 @@ const UserProfileCard = ({user}) => {
             <p>Name: {user?.name}</p>
             <p>Genres: {user?.genres}</p>
             <p>Email: {user?.email}</p>
-            
-         </div>
+        </div>
     );
 };
 

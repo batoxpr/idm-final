@@ -11,9 +11,6 @@ const CreatePostForm = ({createPostFunction}) => {
                 className={styles.Form} 
                 onSubmit={(e) => createPostFunction(e,imageUpload, otherImageUpload)}>
 
-                    {/* <label htmlFor="name">Confirm username:</label>
-                    <input type="text" id="name" name="name"/> */}
-
                     <label htmlFor="postContent">Description</label>
                     <input type="text" id="postContent" name="postContent"/>
 

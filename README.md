@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Final Project: Budify
 
-## Getting Started
+Dynamic Web Application class with Professor James Ayres
 
-First, run the development server:
+Bato Batbileg
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Concept
+Budify is a website that explores the social aspect of music listening experience.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1) Timeline of Music taste: Budify allows users to create a timeline of their musical journey over the years. Each post on Budify includes a music link, a screenshot of their listening activity, and an accompanying image capturing the essence of that moment. With each new post, the user gets to create a visual and auditory diary of their life through music.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+2) Memories: Music can be a powerful trigger for memories. Budify helps users document their life's moments through the songs that they listen to at the time. As users scroll through their Budify profile, they get to reignite memories from the past.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3) Friendships: Budify allows users to discover the musical tastes of their friends and explore the depth of their friendships through the lens of music. Budify lets the user see what their friends are listening to, creating new avenues for connection and shared experiences.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Features
+- dates: post dates are stored in firebase with the createdAt function
+- two images per post: one for a screenshot and one for a life outtake
+- sticky header: includes the logo, which lands the user to the dashboard page, and a nav bar.
+- user profile page: displays the user information and their posts
+- listen button: opens the link to the song in a new window
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Screenshots
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![login](https://github.com/batoxpr/idm-final/blob/main/src/screenshots/login.png?raw=true)
 
-## Deploy on Vercel
+![dashboard](https://github.com/batoxpr/idm-final/blob/main/src/screenshots/dashboard.png?raw=true)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![newpost](https://github.com/batoxpr/idm-final/blob/main/src/screenshots/newpost.png?raw=true)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![profile](https://github.com/batoxpr/idm-final/blob/main/src/screenshots/profile.png?raw=true)
+
+
+
