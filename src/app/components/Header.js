@@ -15,8 +15,8 @@ const Header = ({isLoggedIn, logoutUser}) => {
             <nav className={styles.HeaderNav}>
                 {isLoggedIn && (
                     <>
-                    <Link href="/">Music Log</Link>
-                    <Link href="/createPost">Post</Link>
+                    <Link href="/">Dashboard</Link>
+                    <Link href="/createPost"> Post</Link>
                     <Link href="/profile">Profile</Link>
                     <a onClick={logoutUser}>Log Out</a>
                     </>
