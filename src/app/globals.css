@@ -3,9 +3,10 @@ h1 {
 }
 
 h2 {
+  color: #958EF0;
   display: flex;
   justify-content: center;
-  padding-top: 100px;
+  padding: 40px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -20,4 +21,5 @@ body {
 
 a {
   justify-content: center;
+  color: #958EF0;
 }

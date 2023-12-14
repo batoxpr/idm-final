@@ -12,6 +12,9 @@ const CreateUserForm = ({createUser}) => {
                 <label htmlFor="email">Email</label>
                 <input type="email" name="email" />
 
+                <label htmlFor="genres">Favorite Genres</label>
+                <input type="text" id="genres" name="genres" />
+
                 <label htmlFor="password">Password</label>
                 <input type="password" name="password" />
 

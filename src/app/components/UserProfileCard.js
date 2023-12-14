@@ -5,7 +5,9 @@ const UserProfileCard = ({user}) => {
     return (
         <div className={styles.UserProfile}>
             <p>Name: {user?.name}</p>
+            <p>Genres: {user?.genres}</p>
             <p>Email: {user?.email}</p>
+            
          </div>
     );
 };

@@ -7,6 +7,9 @@
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     color: #958EF0;
+    position: fixed;
+    top: 0;
+    width: 98%;
 }
 
 .HeaderNav {
@@ -36,20 +39,25 @@
 
 /* Form Styles */
 .Form {
+    border: solid 0.5px;
+    border-radius: 20px;
+    background-color: #ffffff;
     padding: 50px;
     font-weight: bold;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    max-width: 375px;
-    height: 100px;
+    max-width: 400px;
     gap: 5px;
     color: #333333;
-    margin: 40px auto; /* Center the form horizontally */
+    margin: 0 auto; /* Center the form horizontally */
+    margin-bottom: 150px;
+
 }
 
 .Button {
-    margin-top: 10px;
+    margin-top: 40px;
+    margin-bottom: 70px;
     padding: 10px 20px;
     border-radius: 30px;
     border-color: #958EF0;
@@ -68,11 +76,52 @@
 /* UserProfile Styles */
 .UserProfile {
     display: flex;
+    border: solid 0.5px;
     border-radius: 20px;
     flex-direction: column;
     padding: 20px;
-    max-width: 400px;
+    max-width: 600px;
     background-color: #ffffff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
 }
+
+
+.PostStyle {
+    display: flex;
+    align-items: center;
+    border: solid 0.5px;
+    border-radius: 20px;
+    flex-direction: column;
+    padding: 30px;
+    line-height: 1;
+    max-width: 350px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+.username {
+    font-weight: bolder;
+    padding: 0;
+}
+
+.Images {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 20px;
+    border: solid 1px;
+    /* gap: 5px; */
+}
+
+.loginpg {
+    background-image: url('https://github.com/batoxpr/madcapmansion/blob/main/sound/backgroundnew.png?raw=true');
+    background-size: 50%;
+}
+
+.date {
+    color: grey;
+    font-style:oblique;
+    margin: 0 auto;
+  }

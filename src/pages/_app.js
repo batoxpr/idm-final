@@ -24,6 +24,7 @@ export default function MyApp({ Component, pageProps}) {
             const name = e.currentTarget.name.value;
             const email = e.currentTarget.email.value;
             const password = e.currentTarget.password.value;
+            const genres = e.currentTarget.genres.value;
             const auth = getAuth();
             const db = getFirestore();
             let user; 
@@ -42,7 +43,9 @@ export default function MyApp({ Component, pageProps}) {
             // Create user reference in firestore
             await addDoc(collection(db, "users"), {
                 name: name,
-                userId: user.uid,
+                email: email,
+                genres: genres,
+                userId: user?.uid,
             })
                 .then(() => {
                     const userToSet = {...user, name }

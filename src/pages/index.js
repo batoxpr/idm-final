@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { getDocs, getFirestore, collection} from "firebase/firestore";
+import { getDocs, getFirestore, collection, orderBy} from "firebase/firestore";
 import PostCard from "@/app/components/PostCard";
 import '../app/globals.css';
+import styles from "@/app/components/components.module.css"
 
 export default function Dashboard({isLoggedIn}) {
   const router = useRouter();
@@ -18,7 +19,9 @@ export default function Dashboard({isLoggedIn}) {
     async function getAllPosts() {
       const postsArray = [];
       const db = getFirestore();
-      const postsQuery = await getDocs(collection(db, "posts"));
+      const postsQuery = await getDocs(collection(db, "posts"), orderBy("createdAt", "asc"));
+
+      console.log(postsArray);
 
       postsQuery.forEach((post) => {
         postsArray.push({id: post.id, ...post.data() });
